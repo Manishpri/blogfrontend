@@ -1,0 +1,29 @@
+<section class="blog mtb-40 text-center" >
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+          <div class="shadow-lg p-3 mb-5 bg-white rounded">
+        <div class="blog-box" *ngFor="let itm of data">
+          <h1>{{itm.title}}</h1><br>
+          <p> {{itm.discription}}</p>
+          <div class="d-flex flex-row ">
+          
+          <button [disabled]=' clike === true' (click)='like(1)' class="mr-2" id="likesbtn">like {{itm.likes}}</button>
+          <button [disabled]=' dclike === true' (click)="dlike(1)" class="  mr-2">dislike {{itm.dlikes}}</button>
+          <button disabled> View: {{itm.views}}</button>
+        </div>
+         </div>
+         
+         
+         
+
+        </div>
+      </div>
+      
+      
+     
+     
+      
+    </div>
+  </div>
+</section>
